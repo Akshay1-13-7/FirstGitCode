@@ -1,9 +1,14 @@
 com.add;
 public class Addition{
-	public static void main(String []args){
-		int a = 10;
-		int b = 30;
+	public int getAddition(int a,int b){
 		int c = a + b;
-		System.out.println("Addition is >> "+c);
+	return c;
+	public static void main(String []args){
+	System.out.println("enter two numbers");
+	Scanner scanner = new Scanner(System.in);
+	int a = scanner.nextInt();
+	int b = scanner.nextInt();
+	Addition.getAddition(a,b);
+	System.oout.println("Addition is  >> "+c);
 	}
 }
